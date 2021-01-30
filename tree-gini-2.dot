@@ -1,0 +1,28 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="spent_last_week_0 <= 0.5\ngini = 0.464\nsamples = 355\nvalue = [130, 225]\nclass = YES", fillcolor="#abd6f4"] ;
+1 [label="spent_last_week_22 <= 0.5\ngini = 0.424\nsamples = 312\nvalue = [95, 217]\nclass = YES", fillcolor="#90c8f0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="spent_last_week_21 <= 0.5\ngini = 0.41\nsamples = 302\nvalue = [87, 215]\nclass = YES", fillcolor="#89c5f0"] ;
+1 -> 2 ;
+3 [label="gini = 0.397\nsamples = 293\nvalue = [80, 213]\nclass = YES", fillcolor="#83c2ef"] ;
+2 -> 3 ;
+4 [label="gini = 0.346\nsamples = 9\nvalue = [7, 2]\nclass = NO", fillcolor="#eca572"] ;
+2 -> 4 ;
+5 [label="Distance_2.104352366 <= 0.5\ngini = 0.32\nsamples = 10\nvalue = [8, 2]\nclass = NO", fillcolor="#eca06a"] ;
+1 -> 5 ;
+6 [label="gini = 0.198\nsamples = 9\nvalue = [8, 1]\nclass = NO", fillcolor="#e89152"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = YES", fillcolor="#399de5"] ;
+5 -> 7 ;
+8 [label="spent_last_month_57 <= 0.5\ngini = 0.303\nsamples = 43\nvalue = [35, 8]\nclass = NO", fillcolor="#eb9e66"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Age_25 <= 0.5\ngini = 0.25\nsamples = 41\nvalue = [35, 6]\nclass = NO", fillcolor="#e9975b"] ;
+8 -> 9 ;
+10 [label="gini = 0.188\nsamples = 38\nvalue = [34, 4]\nclass = NO", fillcolor="#e89050"] ;
+9 -> 10 ;
+11 [label="gini = 0.444\nsamples = 3\nvalue = [1, 2]\nclass = YES", fillcolor="#9ccef2"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = YES", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
